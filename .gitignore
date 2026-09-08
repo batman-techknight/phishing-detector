@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.DS_Store
+
+# generated at train/run time — regenerate locally, don't commit
+data/logs.db
+data/urls_dataset.csv
+app/model/model.pkl
+app/model/scaler.pkl
+app/model/metrics.json
+
+.streamlit/secrets.toml

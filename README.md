@@ -21,10 +21,10 @@ and analytics.
 ## Architecture
 
 ```
- ┌─────────────────────┐        POST /predict         ┌──────────────────────┐
- │  Chrome Extension    │ ───────────────────────────▶ │   FastAPI Backend    │
- │  (background.js +    │ ◀─────────────────────────── │   (app/api/main.py)  │
- │   content.js banner) │      verdict + reasons        │  loads model.pkl     │
+ ┌─────────────────────┐        POST /predict          ┌──────────────────────┐
+ │  Chrome Extension   │ ───────────────────────────▶ │   FastAPI Backend    │
+ │  (background.js +   │ ◀─────────────────────────── │   (app/api/main.py)  │
+ │   content.js banner)│      verdict + reasons        │ loads model.pkl      │
  └─────────────────────┘                               └──────────┬───────────┘
                                                                     │ logs every
                                                                     │ prediction
